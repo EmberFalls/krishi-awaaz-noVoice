@@ -1,0 +1,714 @@
+[
+  {
+    "id": "nashik-onion-001",
+    "title": "Urgent Nashik onion sale",
+    "description": "A Marathi-speaking onion farmer needs buyer pickup within two days.",
+    "farmer": {
+      "id": "farmer-ramesh-jadhav",
+      "name": "Ramesh Jadhav",
+      "location": {
+        "village": "Niphad",
+        "district": "Nashik",
+        "state": "Maharashtra"
+      },
+      "preferred_language": "mr-IN",
+      "preferred_language_name": "Marathi",
+      "secondary_languages": ["hi-IN"],
+      "phone_alias": "SIM-FARMER-001"
+    },
+    "listing": {
+      "id": "listing-nashik-onion-001",
+      "crop": "onion",
+      "crop_local_name": "कांदा",
+      "variety": "summer onion",
+      "quantity_quintal": "50",
+      "quality_grade": "A/B mixed",
+      "minimum_price_per_quintal": "1750",
+      "urgency_hours": 48,
+      "harvest_age_days": 5,
+      "pickup_preferred": true,
+      "notes": "Medium-to-large bulbs. Farmer has limited covered storage and strongly prefers buyer pickup."
+    },
+    "intake_dialogue": [
+      {
+        "speaker": "intake_agent",
+        "text": "नमस्कार. मी कृषी आवाज सहाय्यक बोलत आहे. तुम्हाला कोणता माल विकायचा आहे आणि माल कुठे आहे?",
+        "english_translation": "Hello. This is the Krishi Awaaz assistant. What produce do you want to sell, and where is it located?",
+        "language": "mr-IN",
+        "speaker_id": "intake-agent"
+      },
+      {
+        "speaker": "farmer",
+        "text": "नमस्कार. माझ्याकडे निफाडला ५० क्विंटल उन्हाळी कांदा आहे. पाच दिवसांपूर्वी काढला आहे आणि दोन दिवसांत विकायचा आहे.",
+        "english_translation": "Hello. I have 50 quintals of summer onion in Niphad. It was harvested five days ago and I need to sell it within two days.",
+        "language": "mr-IN",
+        "speaker_id": "farmer-ramesh-jadhav"
+      },
+      {
+        "speaker": "intake_agent",
+        "text": "कांद्याचा आकार आणि दर्जा कसा आहे? किमान किती भाव हवा आहे? गाडी तुम्ही लावणार की व्यापाऱ्याने माल उचलावा?",
+        "english_translation": "What are the onion size and grade? What is your minimum price? Will you arrange transport, or should the buyer collect it?",
+        "language": "mr-IN",
+        "speaker_id": "intake-agent"
+      },
+      {
+        "speaker": "farmer",
+        "text": "बहुतेक कांदा मध्यम ते मोठा आहे; थोडा बी ग्रेड मिसळलेला आहे. क्विंटलला १,७५० रुपयांपेक्षा कमी नको. व्यापाऱ्याने शेतातून उचलला तर बरे.",
+        "english_translation": "Most onions are medium to large, with a little grade B mixed in. I do not want less than ₹1,750 per quintal. It would be better if the buyer collects from the farm.",
+        "language": "mr-IN",
+        "speaker_id": "farmer-ramesh-jadhav"
+      },
+      {
+        "speaker": "intake_agent",
+        "text": "मी पुन्हा सांगतो: निफाड येथे ५० क्विंटल उन्हाळी कांदा, ए/बी मिश्र दर्जा, किमान ₹१,७५०, आणि ४८ तासांत विक्री. हे बरोबर आहे का?",
+        "english_translation": "Let me confirm: 50 quintals of summer onion in Niphad, mixed A/B grade, minimum ₹1,750, and sale within 48 hours. Is that correct?",
+        "language": "mr-IN",
+        "speaker_id": "intake-agent"
+      },
+      {
+        "speaker": "farmer",
+        "text": "हो, बरोबर. वजन करताना जास्त कपात नको, तेही आधी सांगा.",
+        "english_translation": "Yes, correct. I also do not want excessive deductions during weighing, so clarify that in advance.",
+        "language": "mr-IN",
+        "speaker_id": "farmer-ramesh-jadhav"
+      }
+    ],
+    "markets": [
+      {
+        "id": "market-nashik-wholesale",
+        "market_name": "Nashik Wholesale Market",
+        "district": "Nashik",
+        "state": "Maharashtra",
+        "crop": "onion",
+        "min_price_per_quintal": "1700",
+        "modal_price_per_quintal": "1950",
+        "max_price_per_quintal": "2100",
+        "distance_km": "38",
+        "transport_cost_total": "4000",
+        "fees_total": "3500",
+        "data_age_hours": 8
+      },
+      {
+        "id": "market-pimpalgaon",
+        "market_name": "Pimpalgaon Baswant APMC",
+        "district": "Nashik",
+        "state": "Maharashtra",
+        "crop": "onion",
+        "min_price_per_quintal": "1680",
+        "modal_price_per_quintal": "1900",
+        "max_price_per_quintal": "2050",
+        "distance_km": "22",
+        "transport_cost_total": "3200",
+        "fees_total": "3000",
+        "data_age_hours": 10
+      },
+      {
+        "id": "market-lasalgaon",
+        "market_name": "Lasalgaon APMC",
+        "district": "Nashik",
+        "state": "Maharashtra",
+        "crop": "onion",
+        "min_price_per_quintal": "1650",
+        "modal_price_per_quintal": "1880",
+        "max_price_per_quintal": "2020",
+        "distance_km": "31",
+        "transport_cost_total": "3600",
+        "fees_total": "2800",
+        "data_age_hours": 6
+      }
+    ],
+    "middlemen": [
+      {
+        "id": "middleman-vilas-patil",
+        "name": "Vilas Patil",
+        "business_name": "Patil Onion Traders",
+        "market_id": "market-pimpalgaon",
+        "location": {"village": "Pimpalgaon Baswant", "district": "Nashik", "state": "Maharashtra"},
+        "preferred_language": "mr-IN",
+        "supported_crops": ["onion"],
+        "minimum_quantity_quintal": "25",
+        "maximum_quantity_quintal": "100",
+        "initial_offer_per_quintal": "1640",
+        "maximum_offer_per_quintal": "1850",
+        "concession_per_round": "60",
+        "pickup_available": true,
+        "farmer_transport_cost_total": "0",
+        "handling_cost_total": "1200",
+        "payment_delay_days": 2,
+        "reliability_score": "4.4",
+        "negotiation_style": "Starts low, but pays more for a full truck-sized lot and confirms pickup quickly."
+      },
+      {
+        "id": "middleman-rafiq-shaikh",
+        "name": "Rafiq Shaikh",
+        "business_name": "Nashik Fresh Produce",
+        "market_id": "market-nashik-wholesale",
+        "location": {"village": "Nashik", "district": "Nashik", "state": "Maharashtra"},
+        "preferred_language": "mr-IN",
+        "supported_crops": ["onion", "tomato"],
+        "minimum_quantity_quintal": "20",
+        "maximum_quantity_quintal": "80",
+        "initial_offer_per_quintal": "1700",
+        "maximum_offer_per_quintal": "1790",
+        "concession_per_round": "60",
+        "pickup_available": false,
+        "farmer_transport_cost_total": "4200",
+        "handling_cost_total": "900",
+        "payment_delay_days": 0,
+        "reliability_score": "4.8",
+        "negotiation_style": "Offers same-day payment but expects the farmer to deliver to the warehouse."
+      },
+      {
+        "id": "middleman-suresh-more",
+        "name": "Suresh More",
+        "business_name": "More Commission Agency",
+        "market_id": "market-lasalgaon",
+        "location": {"village": "Lasalgaon", "district": "Nashik", "state": "Maharashtra"},
+        "preferred_language": "mr-IN",
+        "supported_crops": ["onion"],
+        "minimum_quantity_quintal": "40",
+        "maximum_quantity_quintal": "150",
+        "initial_offer_per_quintal": "1600",
+        "maximum_offer_per_quintal": "1740",
+        "concession_per_round": "65",
+        "pickup_available": true,
+        "farmer_transport_cost_total": "0",
+        "handling_cost_total": "1800",
+        "payment_delay_days": 4,
+        "reliability_score": "3.6",
+        "negotiation_style": "Firm price ceiling and slower payment; often below the farmer's floor."
+      }
+    ]
+  },
+  {
+    "id": "ludhiana-wheat-001",
+    "title": "Ludhiana wheat lot with flexible timing",
+    "description": "A Punjabi-speaking farmer values reliable weighing and fast payment over the absolute highest quote.",
+    "farmer": {
+      "id": "farmer-gurpreet-singh",
+      "name": "Gurpreet Singh",
+      "location": {"village": "Mullanpur Dakha", "district": "Ludhiana", "state": "Punjab"},
+      "preferred_language": "pa-IN",
+      "preferred_language_name": "Punjabi",
+      "secondary_languages": ["hi-IN"],
+      "phone_alias": "SIM-FARMER-002"
+    },
+    "listing": {
+      "id": "listing-ludhiana-wheat-001",
+      "crop": "wheat",
+      "crop_local_name": "ਕਣਕ",
+      "variety": "PBW 826",
+      "quantity_quintal": "120",
+      "quality_grade": "FAQ, 11.5% moisture",
+      "minimum_price_per_quintal": "2425",
+      "urgency_hours": 240,
+      "harvest_age_days": 12,
+      "pickup_preferred": false,
+      "notes": "Stored under cover. Farmer can arrange transport but wants transparent weighing and payment within two days."
+    },
+    "intake_dialogue": [
+      {
+        "speaker": "intake_agent",
+        "text": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ ਜੀ। ਤੁਸੀਂ ਕਿਹੜੀ ਫਸਲ ਵੇਚਣੀ ਹੈ, ਕਿੰਨੀ ਮਾਤਰਾ ਹੈ ਅਤੇ ਮਾਲ ਕਿੱਥੇ ਪਿਆ ਹੈ?",
+        "english_translation": "Hello. Which crop do you want to sell, how much is there, and where is it stored?",
+        "language": "pa-IN",
+        "speaker_id": "intake-agent"
+      },
+      {
+        "speaker": "farmer",
+        "text": "ਮੇਰੇ ਕੋਲ ਮੁੱਲਾਂਪੁਰ ਦਾਖਾ ਵਿੱਚ 120 ਕੁਇੰਟਲ PBW 826 ਕਣਕ ਪਈ ਹੈ। ਨਮੀ ਸਾਢੇ ਗਿਆਰਾਂ ਫੀਸਦੀ ਦੇ ਕਰੀਬ ਹੈ।",
+        "english_translation": "I have 120 quintals of PBW 826 wheat in Mullanpur Dakha. Moisture is around eleven and a half percent.",
+        "language": "pa-IN",
+        "speaker_id": "farmer-gurpreet-singh"
+      },
+      {
+        "speaker": "intake_agent",
+        "text": "ਤੁਹਾਡਾ ਘੱਟੋ-ਘੱਟ ਭਾਅ ਕੀ ਹੈ? ਕਿੰਨੇ ਦਿਨਾਂ ਵਿੱਚ ਵੇਚਣੀ ਹੈ, ਅਤੇ ਟਰਾਂਸਪੋਰਟ ਤੁਸੀਂ ਕਰ ਸਕਦੇ ਹੋ?",
+        "english_translation": "What is your minimum price? How soon do you need to sell, and can you arrange transport?",
+        "language": "pa-IN",
+        "speaker_id": "intake-agent"
+      },
+      {
+        "speaker": "farmer",
+        "text": "₹2,425 ਤੋਂ ਘੱਟ ਨਹੀਂ ਦੇਣੀ। ਦਸ ਦਿਨ ਦਾ ਸਮਾਂ ਹੈ ਅਤੇ ਟਰਾਲੀ ਮੈਂ ਲਾ ਸਕਦਾ ਹਾਂ, ਪਰ ਤੋਲ ਸਾਫ਼ ਹੋਵੇ ਤੇ ਪੈਸਾ ਦੋ ਦਿਨਾਂ ਵਿੱਚ ਆ ਜਾਵੇ।",
+        "english_translation": "I will not sell below ₹2,425. I have ten days and can arrange a trolley, but weighing must be transparent and payment should arrive within two days.",
+        "language": "pa-IN",
+        "speaker_id": "farmer-gurpreet-singh"
+      },
+      {
+        "speaker": "intake_agent",
+        "text": "ਪੁਸ਼ਟੀ ਲਈ: 120 ਕੁਇੰਟਲ PBW 826 ਕਣਕ, FAQ ਦਰਜਾ, ਘੱਟੋ-ਘੱਟ ₹2,425, ਦਸ ਦਿਨਾਂ ਵਿੱਚ ਵਿਕਰੀ ਅਤੇ ਵੱਧ ਤੋਂ ਵੱਧ ਦੋ ਦਿਨਾਂ ਵਿੱਚ ਭੁਗਤਾਨ। ਠੀਕ ਹੈ?",
+        "english_translation": "To confirm: 120 quintals PBW 826 wheat, FAQ grade, minimum ₹2,425, sale within ten days, and payment within two days. Correct?",
+        "language": "pa-IN",
+        "speaker_id": "intake-agent"
+      },
+      {
+        "speaker": "farmer",
+        "text": "ਹਾਂ ਜੀ, ਠੀਕ ਹੈ। ਜੇ ਭਰੋਸੇਯੋਗ ਖਰੀਦਦਾਰ ਹੋਵੇ ਤਾਂ ਦਸ-ਵੀਹ ਰੁਪਏ ਦਾ ਫਰਕ ਚੱਲ ਜਾਵੇਗਾ, ਪਰ ਘੱਟੋ-ਘੱਟ ਭਾਅ ਤੋਂ ਹੇਠਾਂ ਨਹੀਂ।",
+        "english_translation": "Yes. A difference of ten or twenty rupees is acceptable for a reliable buyer, but not below the minimum price.",
+        "language": "pa-IN",
+        "speaker_id": "farmer-gurpreet-singh"
+      }
+    ],
+    "markets": [
+      {
+        "id": "market-jagraon",
+        "market_name": "Jagraon Mandi",
+        "district": "Ludhiana",
+        "state": "Punjab",
+        "crop": "wheat",
+        "min_price_per_quintal": "2410",
+        "modal_price_per_quintal": "2505",
+        "max_price_per_quintal": "2540",
+        "distance_km": "24",
+        "transport_cost_total": "5400",
+        "fees_total": "4200",
+        "data_age_hours": 12
+      },
+      {
+        "id": "market-khanna",
+        "market_name": "Khanna Grain Market",
+        "district": "Ludhiana",
+        "state": "Punjab",
+        "crop": "wheat",
+        "min_price_per_quintal": "2420",
+        "modal_price_per_quintal": "2520",
+        "max_price_per_quintal": "2560",
+        "distance_km": "52",
+        "transport_cost_total": "9000",
+        "fees_total": "4600",
+        "data_age_hours": 9
+      },
+      {
+        "id": "market-ludhiana-grain",
+        "market_name": "Ludhiana Grain Market",
+        "district": "Ludhiana",
+        "state": "Punjab",
+        "crop": "wheat",
+        "min_price_per_quintal": "2400",
+        "modal_price_per_quintal": "2490",
+        "max_price_per_quintal": "2530",
+        "distance_km": "28",
+        "transport_cost_total": "6100",
+        "fees_total": "4000",
+        "data_age_hours": 7
+      }
+    ],
+    "middlemen": [
+      {
+        "id": "middleman-harjit-brar",
+        "name": "Harjit Brar",
+        "business_name": "Brar Grain Buyers",
+        "market_id": "market-jagraon",
+        "location": {"village": "Jagraon", "district": "Ludhiana", "state": "Punjab"},
+        "preferred_language": "pa-IN",
+        "supported_crops": ["wheat", "paddy"],
+        "minimum_quantity_quintal": "80",
+        "maximum_quantity_quintal": "250",
+        "initial_offer_per_quintal": "2400",
+        "maximum_offer_per_quintal": "2490",
+        "concession_per_round": "35",
+        "pickup_available": false,
+        "farmer_transport_cost_total": "5200",
+        "handling_cost_total": "1400",
+        "payment_delay_days": 1,
+        "reliability_score": "4.9",
+        "negotiation_style": "Transparent weighing and fast payment, but farmer delivers."
+      },
+      {
+        "id": "middleman-maninder-gill",
+        "name": "Maninder Gill",
+        "business_name": "Gill Agro Procurement",
+        "market_id": "market-khanna",
+        "location": {"village": "Khanna", "district": "Ludhiana", "state": "Punjab"},
+        "preferred_language": "pa-IN",
+        "supported_crops": ["wheat"],
+        "minimum_quantity_quintal": "100",
+        "maximum_quantity_quintal": "500",
+        "initial_offer_per_quintal": "2430",
+        "maximum_offer_per_quintal": "2510",
+        "concession_per_round": "40",
+        "pickup_available": true,
+        "farmer_transport_cost_total": "0",
+        "handling_cost_total": "2200",
+        "payment_delay_days": 5,
+        "reliability_score": "4.0",
+        "negotiation_style": "Strong price and buyer pickup, offset by slower payment."
+      },
+      {
+        "id": "middleman-baldev-arora",
+        "name": "Baldev Arora",
+        "business_name": "Arora Commission House",
+        "market_id": "market-ludhiana-grain",
+        "location": {"village": "Ludhiana", "district": "Ludhiana", "state": "Punjab"},
+        "preferred_language": "pa-IN",
+        "supported_crops": ["wheat", "maize"],
+        "minimum_quantity_quintal": "50",
+        "maximum_quantity_quintal": "180",
+        "initial_offer_per_quintal": "2380",
+        "maximum_offer_per_quintal": "2440",
+        "concession_per_round": "30",
+        "pickup_available": true,
+        "farmer_transport_cost_total": "0",
+        "handling_cost_total": "1600",
+        "payment_delay_days": 0,
+        "reliability_score": "4.2",
+        "negotiation_style": "Immediate settlement but a strict purchasing ceiling."
+      }
+    ]
+  },
+  {
+    "id": "madurai-tomato-001",
+    "title": "Same-day Madurai tomato sale",
+    "description": "A Tamil-speaking farmer has highly perishable tomatoes that must move today.",
+    "farmer": {
+      "id": "farmer-meenakshi-rajendran",
+      "name": "Meenakshi Rajendran",
+      "location": {"village": "Alanganallur", "district": "Madurai", "state": "Tamil Nadu"},
+      "preferred_language": "ta-IN",
+      "preferred_language_name": "Tamil",
+      "secondary_languages": [],
+      "phone_alias": "SIM-FARMER-003"
+    },
+    "listing": {
+      "id": "listing-madurai-tomato-001",
+      "crop": "tomato",
+      "crop_local_name": "தக்காளி",
+      "variety": "hybrid cooking tomato",
+      "quantity_quintal": "30",
+      "quality_grade": "A, ripe-firm",
+      "minimum_price_per_quintal": "1050",
+      "urgency_hours": 10,
+      "harvest_age_days": 1,
+      "pickup_preferred": true,
+      "notes": "Harvested yesterday evening. Crates are available, but produce must leave before night."
+    },
+    "intake_dialogue": [
+      {
+        "speaker": "intake_agent",
+        "text": "வணக்கம். எந்த விளைபொருளை விற்க விரும்புகிறீர்கள்? எவ்வளவு உள்ளது, எங்கே உள்ளது?",
+        "english_translation": "Hello. What produce do you want to sell, how much is available, and where is it?",
+        "language": "ta-IN",
+        "speaker_id": "intake-agent"
+      },
+      {
+        "speaker": "farmer",
+        "text": "அலங்காநல்லூரில் 30 குவிண்டால் தக்காளி இருக்கிறது. நேற்று மாலை பறித்தது; இன்று இரவுக்குள் எடுத்துச் செல்ல வேண்டும்.",
+        "english_translation": "I have 30 quintals of tomatoes in Alanganallur. They were harvested yesterday evening and must be moved before tonight.",
+        "language": "ta-IN",
+        "speaker_id": "farmer-meenakshi-rajendran"
+      },
+      {
+        "speaker": "intake_agent",
+        "text": "தக்காளியின் நிலை எப்படி இருக்கிறது? குறைந்தபட்சமாக குவிண்டாலுக்கு என்ன விலை வேண்டும்? பெட்டிகளும் வண்டியும் தயாரா?",
+        "english_translation": "What condition are the tomatoes in? What minimum price do you need per quintal? Are crates and transport ready?",
+        "language": "ta-IN",
+        "speaker_id": "intake-agent"
+      },
+      {
+        "speaker": "farmer",
+        "text": "பழம் சிவப்பாக இருக்கிறது, ஆனால் இன்னும் உறுதியாக உள்ளது. பெட்டிகள் இருக்கின்றன. குவிண்டாலுக்கு ₹1,050-க்கு கீழே வேண்டாம்; வாங்குபவர் வண்டி அனுப்பினால் நல்லது.",
+        "english_translation": "The tomatoes are red but still firm. I have crates. I do not want below ₹1,050 per quintal, and it would help if the buyer sends a vehicle.",
+        "language": "ta-IN",
+        "speaker_id": "farmer-meenakshi-rajendran"
+      },
+      {
+        "speaker": "intake_agent",
+        "text": "உறுதி செய்கிறேன்: 30 குவிண்டால் பழுத்தும் உறுதியான தக்காளி, குறைந்தபட்சம் ₹1,050, இன்று இரவுக்குள் எடுத்துச் செல்ல வேண்டும். சரியா?",
+        "english_translation": "Confirming: 30 quintals of ripe but firm tomatoes, minimum ₹1,050, and pickup before tonight. Correct?",
+        "language": "ta-IN",
+        "speaker_id": "intake-agent"
+      },
+      {
+        "speaker": "farmer",
+        "text": "ஆம். உடனே பணம் கிடைத்தால் கொஞ்சம் குறைந்த விலையையும் பரிசீலிப்பேன், ஆனால் ₹1,050-க்கு கீழே ஒப்புக்கொள்ள வேண்டாம்.",
+        "english_translation": "Yes. I may consider a slightly lower comparison if payment is immediate, but do not agree below ₹1,050.",
+        "language": "ta-IN",
+        "speaker_id": "farmer-meenakshi-rajendran"
+      }
+    ],
+    "markets": [
+      {
+        "id": "market-madurai-central",
+        "market_name": "Madurai Central Market",
+        "district": "Madurai",
+        "state": "Tamil Nadu",
+        "crop": "tomato",
+        "min_price_per_quintal": "900",
+        "modal_price_per_quintal": "1260",
+        "max_price_per_quintal": "1450",
+        "distance_km": "24",
+        "transport_cost_total": "3200",
+        "fees_total": "1900",
+        "data_age_hours": 4
+      },
+      {
+        "id": "market-oddanchatram",
+        "market_name": "Oddanchatram Vegetable Market",
+        "district": "Dindigul",
+        "state": "Tamil Nadu",
+        "crop": "tomato",
+        "min_price_per_quintal": "950",
+        "modal_price_per_quintal": "1320",
+        "max_price_per_quintal": "1500",
+        "distance_km": "78",
+        "transport_cost_total": "6800",
+        "fees_total": "2100",
+        "data_age_hours": 5
+      },
+      {
+        "id": "market-mattuthavani",
+        "market_name": "Mattuthavani Integrated Market",
+        "district": "Madurai",
+        "state": "Tamil Nadu",
+        "crop": "tomato",
+        "min_price_per_quintal": "920",
+        "modal_price_per_quintal": "1240",
+        "max_price_per_quintal": "1400",
+        "distance_km": "27",
+        "transport_cost_total": "3500",
+        "fees_total": "1600",
+        "data_age_hours": 3
+      }
+    ],
+    "middlemen": [
+      {
+        "id": "middleman-kannan-velu",
+        "name": "Kannan Velu",
+        "business_name": "Velu Vegetable Supply",
+        "market_id": "market-madurai-central",
+        "location": {"village": "Madurai", "district": "Madurai", "state": "Tamil Nadu"},
+        "preferred_language": "ta-IN",
+        "supported_crops": ["tomato", "brinjal"],
+        "minimum_quantity_quintal": "15",
+        "maximum_quantity_quintal": "50",
+        "initial_offer_per_quintal": "980",
+        "maximum_offer_per_quintal": "1180",
+        "concession_per_round": "60",
+        "pickup_available": true,
+        "farmer_transport_cost_total": "0",
+        "handling_cost_total": "800",
+        "payment_delay_days": 0,
+        "reliability_score": "4.7",
+        "negotiation_style": "Can dispatch a vehicle quickly and pays immediately."
+      },
+      {
+        "id": "middleman-fathima-banu",
+        "name": "Fathima Banu",
+        "business_name": "Banu Hotel Produce Network",
+        "market_id": "market-mattuthavani",
+        "location": {"village": "Mattuthavani", "district": "Madurai", "state": "Tamil Nadu"},
+        "preferred_language": "ta-IN",
+        "supported_crops": ["tomato", "onion", "chilli"],
+        "minimum_quantity_quintal": "10",
+        "maximum_quantity_quintal": "40",
+        "initial_offer_per_quintal": "1030",
+        "maximum_offer_per_quintal": "1210",
+        "concession_per_round": "50",
+        "pickup_available": true,
+        "farmer_transport_cost_total": "0",
+        "handling_cost_total": "1100",
+        "payment_delay_days": 1,
+        "reliability_score": "4.5",
+        "negotiation_style": "Buys for a hotel network, values consistent grade, and negotiates in smaller increments."
+      },
+      {
+        "id": "middleman-selvam-ravi",
+        "name": "Selvam Ravi",
+        "business_name": "Ravi Market Commission",
+        "market_id": "market-oddanchatram",
+        "location": {"village": "Oddanchatram", "district": "Dindigul", "state": "Tamil Nadu"},
+        "preferred_language": "ta-IN",
+        "supported_crops": ["tomato"],
+        "minimum_quantity_quintal": "25",
+        "maximum_quantity_quintal": "100",
+        "initial_offer_per_quintal": "920",
+        "maximum_offer_per_quintal": "1040",
+        "concession_per_round": "45",
+        "pickup_available": false,
+        "farmer_transport_cost_total": "6500",
+        "handling_cost_total": "700",
+        "payment_delay_days": 2,
+        "reliability_score": "3.8",
+        "negotiation_style": "Distant market, no pickup, and likely to remain below the farmer's floor."
+      }
+    ]
+  },
+  {
+    "id": "guntur-chilli-001",
+    "title": "Guntur dried chilli quality negotiation",
+    "description": "A Telugu-speaking farmer sells a smaller high-value chilli lot where quality and delayed payment matter.",
+    "farmer": {
+      "id": "farmer-lakshmi-narayana",
+      "name": "Lakshmi Narayana",
+      "location": {"village": "Prathipadu", "district": "Guntur", "state": "Andhra Pradesh"},
+      "preferred_language": "te-IN",
+      "preferred_language_name": "Telugu",
+      "secondary_languages": ["hi-IN"],
+      "phone_alias": "SIM-FARMER-004"
+    },
+    "listing": {
+      "id": "listing-guntur-chilli-001",
+      "crop": "dried_chilli",
+      "crop_local_name": "ఎండు మిర్చి",
+      "variety": "Teja",
+      "quantity_quintal": "20",
+      "quality_grade": "334/Teja mixed, low moisture",
+      "minimum_price_per_quintal": "14200",
+      "urgency_hours": 168,
+      "harvest_age_days": 20,
+      "pickup_preferred": true,
+      "notes": "Bagged and stored dry. Farmer wants the buyer to state quality deductions before pickup."
+    },
+    "intake_dialogue": [
+      {
+        "speaker": "intake_agent",
+        "text": "నమస్కారం. మీరు ఏ పంట అమ్మాలనుకుంటున్నారు? ఎంత పరిమాణం ఉంది, సరుకు ఎక్కడ ఉంది?",
+        "english_translation": "Hello. Which crop do you want to sell, how much is available, and where is it located?",
+        "language": "te-IN",
+        "speaker_id": "intake-agent"
+      },
+      {
+        "speaker": "farmer",
+        "text": "ప్రత్తిపాడు దగ్గర 20 క్వింటాళ్ల తేజ ఎండు మిర్చి ఉంది. కొంత 334 రకం కలిసింది, తేమ తక్కువగా ఉంది.",
+        "english_translation": "I have 20 quintals of dried Teja chilli near Prathipadu. Some 334 variety is mixed in, and moisture is low.",
+        "language": "te-IN",
+        "speaker_id": "farmer-lakshmi-narayana"
+      },
+      {
+        "speaker": "intake_agent",
+        "text": "మీ కనీస ధర ఎంత? ఎన్ని రోజుల్లో అమ్మాలి? నాణ్యత పేరుతో కోతలకు ఏమైనా షరతు ఉందా?",
+        "english_translation": "What is your minimum price? How soon must it be sold? Do you have conditions regarding quality deductions?",
+        "language": "te-IN",
+        "speaker_id": "intake-agent"
+      },
+      {
+        "speaker": "farmer",
+        "text": "క్వింటాల్‌కు ₹14,200 కంటే తక్కువ వద్దు. వారం రోజుల్లో అమ్మాలి. రంగు లేదా తేమ పేరుతో ఎంత కోత పెడతారో ముందే చెప్పాలి; తర్వాత మార్చకూడదు.",
+        "english_translation": "I do not want less than ₹14,200 per quintal. It should sell within a week. Any colour or moisture deduction must be disclosed in advance and not changed later.",
+        "language": "te-IN",
+        "speaker_id": "farmer-lakshmi-narayana"
+      },
+      {
+        "speaker": "intake_agent",
+        "text": "ధృవీకరిస్తున్నాను: 20 క్వింటాళ్ల తేజ/334 మిశ్రమ ఎండు మిర్చి, కనీస ధర ₹14,200, ఏడు రోజుల్లో అమ్మకం, కోతలు ముందే స్పష్టంగా చెప్పాలి. సరేనా?",
+        "english_translation": "Confirming: 20 quintals of mixed Teja/334 dried chilli, minimum ₹14,200, sale within seven days, and deductions disclosed in advance. Correct?",
+        "language": "te-IN",
+        "speaker_id": "intake-agent"
+      },
+      {
+        "speaker": "farmer",
+        "text": "అవును. వెంటనే మొత్తం డబ్బు రాకపోయినా రెండు రోజుల్లో వస్తే సరిపోతుంది.",
+        "english_translation": "Yes. It is acceptable if full payment arrives within two days, even if it is not immediate.",
+        "language": "te-IN",
+        "speaker_id": "farmer-lakshmi-narayana"
+      }
+    ],
+    "markets": [
+      {
+        "id": "market-guntur-chilli-yard",
+        "market_name": "Guntur Chilli Yard",
+        "district": "Guntur",
+        "state": "Andhra Pradesh",
+        "crop": "dried_chilli",
+        "min_price_per_quintal": "13800",
+        "modal_price_per_quintal": "15400",
+        "max_price_per_quintal": "16800",
+        "distance_km": "21",
+        "transport_cost_total": "2800",
+        "fees_total": "5200",
+        "data_age_hours": 6
+      },
+      {
+        "id": "market-prathipadu",
+        "market_name": "Prathipadu Market Yard",
+        "district": "Guntur",
+        "state": "Andhra Pradesh",
+        "crop": "dried_chilli",
+        "min_price_per_quintal": "13600",
+        "modal_price_per_quintal": "15000",
+        "max_price_per_quintal": "16200",
+        "distance_km": "7",
+        "transport_cost_total": "1200",
+        "fees_total": "4300",
+        "data_age_hours": 8
+      },
+      {
+        "id": "market-tenali",
+        "market_name": "Tenali Agricultural Market",
+        "district": "Guntur",
+        "state": "Andhra Pradesh",
+        "crop": "dried_chilli",
+        "min_price_per_quintal": "13500",
+        "modal_price_per_quintal": "15100",
+        "max_price_per_quintal": "16400",
+        "distance_km": "46",
+        "transport_cost_total": "4200",
+        "fees_total": "4600",
+        "data_age_hours": 10
+      }
+    ],
+    "middlemen": [
+      {
+        "id": "middleman-venkata-reddy",
+        "name": "Venkata Reddy",
+        "business_name": "Reddy Chilli Exports",
+        "market_id": "market-guntur-chilli-yard",
+        "location": {"village": "Guntur", "district": "Guntur", "state": "Andhra Pradesh"},
+        "preferred_language": "te-IN",
+        "supported_crops": ["dried_chilli"],
+        "minimum_quantity_quintal": "15",
+        "maximum_quantity_quintal": "75",
+        "initial_offer_per_quintal": "13900",
+        "maximum_offer_per_quintal": "15100",
+        "concession_per_round": "400",
+        "pickup_available": true,
+        "farmer_transport_cost_total": "0",
+        "handling_cost_total": "1500",
+        "payment_delay_days": 2,
+        "reliability_score": "4.6",
+        "negotiation_style": "Export-oriented buyer who pays for colour but insists on inspection."
+      },
+      {
+        "id": "middleman-srinivas-rao",
+        "name": "Srinivas Rao",
+        "business_name": "Sri Lakshmi Spices",
+        "market_id": "market-prathipadu",
+        "location": {"village": "Prathipadu", "district": "Guntur", "state": "Andhra Pradesh"},
+        "preferred_language": "te-IN",
+        "supported_crops": ["dried_chilli", "turmeric"],
+        "minimum_quantity_quintal": "10",
+        "maximum_quantity_quintal": "40",
+        "initial_offer_per_quintal": "14100",
+        "maximum_offer_per_quintal": "14800",
+        "concession_per_round": "250",
+        "pickup_available": true,
+        "farmer_transport_cost_total": "0",
+        "handling_cost_total": "900",
+        "payment_delay_days": 0,
+        "reliability_score": "4.3",
+        "negotiation_style": "Local processor with immediate payment and moderate price flexibility."
+      },
+      {
+        "id": "middleman-anil-kumar",
+        "name": "Anil Kumar",
+        "business_name": "Tenali Masala Trading",
+        "market_id": "market-tenali",
+        "location": {"village": "Tenali", "district": "Guntur", "state": "Andhra Pradesh"},
+        "preferred_language": "te-IN",
+        "supported_crops": ["dried_chilli"],
+        "minimum_quantity_quintal": "20",
+        "maximum_quantity_quintal": "100",
+        "initial_offer_per_quintal": "13700",
+        "maximum_offer_per_quintal": "14300",
+        "concession_per_round": "250",
+        "pickup_available": false,
+        "farmer_transport_cost_total": "4000",
+        "handling_cost_total": "1100",
+        "payment_delay_days": 4,
+        "reliability_score": "3.7",
+        "negotiation_style": "Distant buyer with a low ceiling and slower settlement."
+      }
+    ]
+  }
+]

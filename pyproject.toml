@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "krishi-awaaz"
+version = "0.1.0"
+description = "Text-first multi-agent market negotiation simulator for Krishi Awaaz"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.10,<3.0",
+    "psycopg[binary]>=3.2,<4.0",
+    "rich>=13.9,<15.0",
+    "sqlalchemy>=2.0,<3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3,<10.0",
+    "ruff>=0.9,<1.0",
+]
+voice = [
+    "fastapi>=0.115,<1.0",
+    "httpx>=0.27,<1.0",
+    "python-multipart>=0.0.9,<1.0",
+    "sarvamai>=0.1,<2.0",
+    "twilio>=9.0,<10.0",
+    "uvicorn[standard]>=0.30,<1.0",
+]
+
+[project.scripts]
+krishi-sim = "orchestration.cli:main"
+krishi-voice = "telephony.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "agents",
+    "dashboard",
+    "data",
+    "db",
+    "krishi_awaaz",
+    "orchestration",
+    "telephony",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "integration: requires the configured local PostgreSQL database",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
